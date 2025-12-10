@@ -1,0 +1,74 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Page title */
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Status text styling */
+#status {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Board container: 3x3 grid */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+/* Each square on the board */
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid #333;
+    cursor: pointer;
+
+    /* For X/O images */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* X image */
+.square.x {
+    background-image: url("images/X.png");
+}
+
+/* O image */
+.square.o {
+    background-image: url("images/O.png");
+}
+
+/* Disable interaction when game ends */
+.square.disabled {
+    cursor: default;
+    background-color: #e0e0e0;
+}
+
+/* Restart button styling */
+#resetBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #333;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#resetBtn:hover {
+    background-color: #555;
+}
