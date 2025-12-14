@@ -1,0 +1,82 @@
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+}
+
+#menuBG {
+    width: 600px;   /* was 400px */
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 600px;   /* was 400px */
+    height: 200px;
+}
+
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.middle {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+/* Page background */
+body {
+    background-color: #f5f5f5;
+}
+
+/* Main heading styling */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b22222; /* dark red */
+}
+
+/* Section headings (Size, Meats, etc.) */
+h3 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #333333;
+}
+
+/* General div styling */
+div {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #000000;
+}
+body { background-color: #fff3e0; }
+h1 { color: #d32f2f; }
+h3 { color: #1976d2; }
