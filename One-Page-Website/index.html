@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suisse Escape — Discover Switzerland</title>
+  <meta name="description" content="Plan your perfect Swiss escape: highlights, photos, contact form, and a Switzerland travel video." />
+
+  <!-- LINK TO EXTERNAL CSS -->
+  <link rel="stylesheet" href="css/one_page_website.css">
+</head>
+
+<body>
+
+  <!-- HOME -->
+  <header id="home">
+    <h1>Discover Switzerland</h1>
+    <p>Alpine peaks, emerald lakes, storybook towns — plan your perfect Swiss escape.</p>
+  </header>
+
+  <!-- NAV with bookmarks -->
+  <nav aria-label="Page navigation">
+    <a href="#home">Home</a>
+    <a href="#highlights">Highlights</a>
+    <a href="#photos">Photos</a>
+    <a href="#contact">Contact</a>
+    <a href="#video">Video</a>
+  </nav>
+
+  <main>
+    <!-- Hero image -->
+    <div class="hero" aria-hidden="true">
+      <img src="images/hero.jpg" alt="Swiss Alps panorama with lake and alpine village" loading="lazy">
+    </div>
+
+    <!-- HIGHLIGHTS / ABOUT -->
+    <section id="highlights" aria-labelledby="about-title">
+      <h2 id="about-title">Why Switzerland?</h2>
+      <div class="intro">
+        <p>
+          Switzerland is a postcard come to life — think the <b>Matterhorn</b>, <i>glacier-fed lakes</i>, and charming
+          medieval towns. Ride scenic trains, stroll car-free villages like <u>Zermatt</u>, and sample world-class
+          chocolate and cheese along the way.
+        </p>
+        <div class="chips" aria-label="Popular Destinations">
+          <span class="chip">Zermatt</span>
+          <span class="chip">Interlaken</span>
+          <span class="chip">Lucerne</span>
+          <span class="chip">Lauterbrunnen</span>
+          <span class="chip">Bern</span>
+          <span class="chip">Montreux</span>
+          <span class="chip">Grindelwald</span>
+        </div>
+      </div>
+      <a class="top" href="#home">Back to top ↑</a>
+    </section>
+
+    <!-- PHOTOS -->
+    <section id="photos" aria-labelledby="photos-title">
+      <h2 id="photos-title">Photo Gallery</h2>
+
+      <div class="grid">
+        <img class="gallery-img" src="images/matterhorn.jpg" data-full="images/matterhorn.jpg" alt="Matterhorn peak over Zermatt" loading="lazy">
+        <img class="gallery-img" src="images/lucerne.jpg" data-full="images/lucerne.jpg" alt="Chapel Bridge and Lake Lucerne at sunset" loading="lazy">
+        <img class="gallery-img" src="images/interlaken.jpg" data-full="images/interlaken.jpg" alt="Interlaken between Lake Thun and Lake Brienz" loading="lazy">
+        <img class="gallery-img" src="images/lauterbrunnen.jpg" data-full="images/lauterbrunnen.jpg" alt="Lauterbrunnen valley with waterfalls" loading="lazy">
+        <img class="gallery-img" src="images/grindelwald.jpg" data-full="images/grindelwald.jpg" alt="Grindelwald alpine meadows and Eiger view" loading="lazy">
+        <img class="gallery-img" src="images/bern.jpg" data-full="images/bern.jpg" alt="Bern old town and Aare River" loading="lazy">
+      </div>
+
+      <a class="top" href="#home">Back to top ↑</a>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Plan Your Trip</h2>
+      <p>Ask a question or request a sample itinerary — we’ll reply by email.</p>
+      <form action="">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="dates">Approximate Dates</label>
+        <input id="dates" name="dates" type="text" placeholder="e.g., 10–17 July">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"
+          placeholder="What would you like to see in Switzerland?"></textarea>
+
+        <button type="submit">Send Request</button>
+      </form>
+      <a class="top" href="#home">Back to top ↑</a>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video" aria-labelledby="video-title">
+      <h2 id="video-title">Switzerland in Motion</h2>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/RDeZjj3WK-Q"
+          title="Switzerland Travel Video"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <a class="top" href="#home">Back to top ↑</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Suisse Escape • Made by Taiyaba</p>
+  </footer>
+
+   <!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <span class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</span>
+
+  <img class="lightbox-content" id="lightboxImg" alt="Expanded image">
+
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+
+  <div id="lightboxThumbs" class="lightbox-thumbs" aria-label="Thumbnails"></div>
+
+  <a class="lightbox-prev" id="lightboxPrev" aria-label="Previous">&#10094;</a>
+  <a class="lightbox-next" id="lightboxNext" aria-label="Next">&#10095;</a>
+</div>
+
+  <!-- JS FILE (ONLY here, at the bottom) -->
+  <script src="JS/one_page_website.js"></script>
+
+</body>
+</html>

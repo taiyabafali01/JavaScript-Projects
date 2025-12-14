@@ -1,0 +1,255 @@
+/* Global */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #24313f;
+}
+
+/* Header */
+header {
+  background: #0a3d62;
+  color: #fff;
+  padding: 28px 16px;
+}
+
+header h1 { margin: 0 0 6px; }
+header p { margin: 0; opacity: 0.9; }
+
+/* Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  background: #114d7a;
+  padding: 10px 16px;
+  z-index: 10;
+}
+
+nav a {
+  color: #eaf4ff;
+  text-decoration: none;
+  margin-right: 18px;
+  font-weight: 700;
+}
+
+nav a:hover { text-decoration: underline; }
+
+/* Layout */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+section {
+  padding: 18px 0;
+  border-bottom: 1px solid #e6eef6;
+}
+
+section:last-of-type { border-bottom: none; }
+
+h2 {
+  margin: 8px 0 12px;
+  color: #0a3d62;
+}
+
+/* Offset for sticky nav */
+#home, #highlights, #photos, #contact, #video {
+  scroll-margin-top: 70px;
+}
+
+/* Hero */
+.hero {
+  margin-top: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #d6e4f0;
+}
+
+.hero img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Intro */
+.intro {
+  display: grid;
+  gap: 12px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.chip {
+  background: #eef6ff;
+  border: 1px solid #cfe3fb;
+  color: #114d7a;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+/* Photo grid */
+.grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #d6e4f0;
+}
+
+/* Form */
+form {
+  display: grid;
+  gap: 10px;
+  max-width: 560px;
+  background: #f8fbff;
+  border: 1px solid #d6e4f0;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cfe3fb;
+  font: inherit;
+}
+
+textarea { resize: vertical; }
+
+button {
+  background: #0a84ff;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover { filter: brightness(1.05); }
+
+/* Video */
+.video-wrap {
+  aspect-ratio: 16 / 9;
+  max-width: 760px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #d6e4f0;
+}
+
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 22px 16px;
+  background: #0a3d62;
+  color: #eaf4ff;
+  margin-top: 18px;
+}
+
+.top {
+  display: inline-block;
+  margin-top: 8px;
+  color: #0a84ff;
+  text-decoration: none;
+}
+
+.top:hover { text-decoration: underline; }
+/* Make gallery images clickable */
+.gallery-img { cursor: pointer; }
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  padding: 30px 16px;
+}
+
+.lightbox.open { display: block; }
+
+.lightbox-content {
+  display: block;
+  max-width: 95vw;
+  max-height: 80vh;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.lightbox-caption {
+  color: #fff;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 10px;
+  right: 18px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lightbox-prev, .lightbox-next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 36px;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px 14px;
+}
+
+.lightbox-prev { left: 10px; }
+.lightbox-next { right: 10px; }
+.lightbox-thumbs{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top:14px;
+  max-width:95vw;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.lightbox-thumbs img{
+  width:70px;
+  height:50px;
+  object-fit:cover;
+  cursor:pointer;
+  border-radius:6px;
+  opacity:0.75;
+}
+
+.lightbox-thumbs img.active{
+  opacity:1;
+  outline:2px solid #fff;
+}
